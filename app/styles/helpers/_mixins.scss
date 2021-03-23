@@ -180,8 +180,8 @@
             align-items:stretch,
             justify-content: flex-start,
             flex-direction: row,
-            display: flex
-            flex-wrap: nowrap
+            display: flex,
+            flex-wrap: nowrap,
         ),
         $config
     );
