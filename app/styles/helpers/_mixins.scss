@@ -99,7 +99,7 @@
         
         & > * {
             transition: transform 0.25s linear;
-            transform: translate(-1rem, -1rem);
+            will-change: transform;
         }
         
         #{$contentClass} {
@@ -134,6 +134,10 @@
             }
 
             @if $transform == "true" {
+                & > * {
+                    transform: translate(-1rem, -1rem);
+                }
+
                 // transform: translate(-1rem, -1rem);
 
                 // &::after {
@@ -175,16 +179,16 @@
 }
 
 @mixin flexbox2($config: ()) {
-    $config:extend (
+    $config:extend(
         (
-            align-items:stretch,
+            align-items: stretch,
             justify-content: flex-start,
             flex-direction: row,
             display: flex,
-            flex-wrap: nowrap,
+            flex-wrap: nowrap
         ),
         $config
-    );
+     );
 
     align-items: map-get($config, align-items);
     justify-content: map-get($config, justify-content);

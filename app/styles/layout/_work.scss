@@ -97,6 +97,10 @@
     .work-item {
         height: 100%;
 
+        &:first-child {
+            grid-area: h1;
+        }
+
         &:last-child {
             grid-area: h7;
         }
