@@ -1,0 +1,18 @@
+section.team
+    .container
+        +blockBox({
+            caption: "Who we are", 
+            title: "Meet our team", 
+            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis ipsum inventore reprehenderit, iusto tempora tempore impedit quidem nemo esse blanditiis ducimus dolores harum quisquam, explicabo aspernatur vitae delectus? Veritatis."
+        })
+        .team-list
+            +teamItem({ src: "./images/img-team1.png", name: "Mathew Dix", position: "Graphic Designer"})
+                +teamSocial({facebook: "#mathewdix", twitter: "#mathewdix", pinterest: "#mathewdix", instagram: "#mathewdix"})
+            +teamItem({ src: "./images/img-team2.png", name: "Christopher Campbell", position: "Branding/UX Design"})
+                +teamSocial({facebook: "#christophercampbell", twitter: "#christophercampbell", pinterest: "#christophercampbell", instagram: "#christophercampbell"})
+            +teamItem({ src: "./images/img-team3.png", name: "Michael Fertic", position: "Developer"})
+                +teamSocial({facebook: "#michaelfertic", twitter: "#michaelfertic", pinterest: "#michaelfertic", instagram: "#michaelfertic"})
+
+section.brand
+    .container
+        img(src="./images/img-logos.png", alt="brands")

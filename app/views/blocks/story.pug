@@ -1,0 +1,15 @@
+section.story
+    .container
+        +blockBox({
+            caption: "Our stories", 
+            title: "Latest blog"
+        })
+        ul.story-list
+            +storyItem({ src: "./images/img-blog1.png", dateNumber: 15, dateText: "Nov", title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, facere.", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nihil possimus id repellendus modi saepe eos ratione, doloribus soluta beatae esse qui et, sit earum quam accusantium, maxime inventore quod!", views: 1000, comments: 1000 })
+            +storyItem({ src: "./images/img-blog2.png", dateNumber: 15, dateText: "Nov", title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, facere.", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nihil possimus id repellendus modi saepe eos ratione, doloribus soluta beatae esse qui et, sit earum quam accusantium, maxime inventore quod!", views: 1000, comments: 1000 })
+            +storyItem({ src: "./images/img-blog3.png", dateNumber: 15, dateText: "Nov", title: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, facere.", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nihil possimus id repellendus modi saepe eos ratione, doloribus soluta beatae esse qui et, sit earum quam accusantium, maxime inventore quod!", views: 1000, comments: 1000 })
+section.map
+    .container
+        .map-content
+            img.map-icon(src= "./images/img-map-icon.png")
+            h2.map-heading Open map

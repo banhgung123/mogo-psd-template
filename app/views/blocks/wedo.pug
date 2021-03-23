@@ -1,0 +1,15 @@
+section.wedo
+    .container
+        +blockBox({
+            caption: "Service", 
+            title: "What we do", 
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aut, quibusdam ad at sapiente rem assumenda sunt eaque error nisi provident accusamus ut porro aspernatur ipsam esse deserunt odit sint!"
+        })
+        .wedo-container
+            img(src= "./images/img-wedo.png").wedo-image
+            .wedo-content
+                +wedoItem({ src: "./images/img-wedo-icon1.png", title: "Photography", text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum doloribus dolorem sint ab et, veniam similique. Optio reiciendis accusamus vero iure laudantium, corporis itaque animi aut sed! Quibusdam, est. Corrupti!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum doloribus dolorem sint ab et, veniam similique. Optio reiciendis accusamus vero iure laudantium, corporis itaque animi aut sed! Quibusdam, est. Corrupti!Lorem ipsum dolor sit amet consectetur, adipisicing elit.", active: "is-active"})
+                +wedoItem({ src: "./images/img-wedo-icon2.png", title: "Creativity", text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum doloribus dolorem sint ab et, veniam similique. Optio reiciendis accusamus vero iure laudantium, corporis itaque animi aut sed! Quibusdam, est. Corrupti!Lorem ipsum dolor sit amet consectetur, adipisicing elit."})
+                +wedoItem({ src: "./images/img-wedo-icon3.png", title: "Wed design", text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum doloribus dolorem sint ab et, veniam similique. Optio reiciendis accusamus vero iure laudantium, corporis itaque animi aut sed! Quibusdam, est. Corrupti!Lorem ipsum dolor sit amet consectetur, adipisicing elit."})
+                
+            //- accordion
