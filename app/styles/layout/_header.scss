@@ -14,7 +14,8 @@
         color: white;
     }
 
-    &-toggle {
+    &-toggle,
+    &-toggle-close {
         display: none;
         font-size: 2rem;
         cursor: pointer;
@@ -200,7 +201,7 @@
         .header-menu {
             position: fixed;
             right: 0;
-            top: 0;
+            top: 7rem;
             bottom: 0;
             background-color: white;
             width: 300px;

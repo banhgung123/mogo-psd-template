@@ -47,7 +47,7 @@ button {
     font-size: 3rem;
     font-weight: bold;
     color: white; }
-  .header-toggle {
+  .header-toggle, .header-toggle-close {
     display: none;
     font-size: 2rem;
     cursor: pointer; }
@@ -190,7 +190,7 @@ button {
     .header .header-menu {
       position: fixed;
       right: 0;
-      top: 0;
+      top: 7rem;
       bottom: 0;
       background-color: white;
       width: 300px;

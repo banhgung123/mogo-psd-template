@@ -16,17 +16,24 @@
 //   });
 // });
 
+// const menuToggle = document.querySelector(".header-toggle");
 const menuToggle = document.querySelector(".header-toggle");
+const menuToggleClose = document.querySelector(".header-toggle-close");
 const menuHeader = document.querySelector(".header-menu");
 const expandClass = "is-expand";
+
 menuToggle.addEventListener("click", function () {
   menuHeader.classList.add(expandClass);
+  menuToggle.style.display = "none";
+  menuToggleClose.style.display = "inline-block";
 });
 
-window.addEventListener("click", function (e) {
-  if (!menuHeader.contains(e.target) && !e.target.matches(".header-toggle")) {
-    menuHeader.classList.remove(expandClass);
-  }
+menuToggleClose.addEventListener("click", function (e) {
+  // if (!menuHeader.contains(e.target) && !e.target.matches(".header-toggle")) {
+  menuHeader.classList.remove(expandClass);
+  menuToggle.style.display = "inline-block";
+  menuToggleClose.style.display = "none";
+  // }
 });
 
 // Slick slider
