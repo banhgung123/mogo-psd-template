@@ -1,0 +1,36 @@
+.scrollToTopBtn {
+    //   position: fixed; /* Fixed/sticky position */
+    //   bottom: 2rem; /* Place the button at the bottom of the page */
+    //   right: 3rem; /* Place the button 30px from the right */
+    //   z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: $gray-dark-color; /* Set a background color */
+    //   color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 1.5rem; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 1.8rem; /* Increase font size */
+    
+    /* place it at the bottom-right corner */
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+
+    /* keep it at the top of everything else */
+    z-index: 100;
+
+    /* hide with opacity */
+    opacity: 0;
+
+    /* also add a translate effect */
+    transform: translateY(10rem);
+
+    /* and a transition */
+    transition: all 0.5s ease;
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}

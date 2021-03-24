@@ -1,7 +1,8 @@
 html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 .text {
   font-family: "Roboto", sans-serif;
@@ -1733,6 +1734,41 @@ button {
       margin-top: 1.5rem; }
     .footer-social-icon:first-of-type {
       margin-left: 0; } }
+
+.scrollToTopBtn {
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #cccccc;
+  /* Set a background color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 1.5rem;
+  /* Some padding */
+  border-radius: 50%;
+  /* Rounded corners */
+  font-size: 1.8rem;
+  /* Increase font size */
+  /* place it at the bottom-right corner */
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  -webkit-transform: translateY(10rem);
+  transform: translateY(10rem);
+  /* and a transition */
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.showBtn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0); }
 
 .wrapper {
   max-width: 1920px;

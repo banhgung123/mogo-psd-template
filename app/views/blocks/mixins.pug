@@ -1,6 +1,6 @@
-mixin menuLink(title, href = "#")
+mixin menuLink(data)
     li.header-menu-item
-        a.header-menu-link(href = href)= title
+        a.header-menu-link(href= data.href)= data.title
 
 mixin headerBottomItem(data)
     .header-bottom-item

@@ -6,11 +6,11 @@ header.header
             a.header-logo(href="index.html") MoGo
             i.fa.fa-bars.header-toggle
             ul.header-menu
-                +menuLink("About")
-                +menuLink("Service")
-                +menuLink("Work")
-                +menuLink("Contact")
-                +menuLink("Blog")
+                +menuLink({ title: "About", href: "#about" })
+                +menuLink({ title: "Service", href: "#service" })
+                +menuLink({ title: "Work", href: "#work" })
+                +menuLink({ title: "Contact", href: "#contact" })
+                +menuLink({ title: "Blog", href: "#blog" })
                 li.header-menu-item
                     a.header-menu-icon(href="#")
                         i.fa.fa-shopping-cart

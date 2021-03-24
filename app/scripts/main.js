@@ -44,6 +44,33 @@ window.addEventListener("click", function (e) {
   }
 });
 
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+const rootElement = document.documentElement;
+const showBtnClass = "showBtn";
+
+function handleScroll() {
+  // Do something on scroll
+  const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+  if (rootElement.scrollTop / scrollTotal > 0.1) {
+    // Show button
+    scrollToTopBtn.classList.add(showBtnClass);
+  } else {
+    // Hide button
+    scrollToTopBtn.classList.remove(showBtnClass);
+  }
+}
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+document.addEventListener("scroll", handleScroll);
+scrollToTopBtn.addEventListener("click", scrollToTop);
+
 // Slick slider
 $(document).ready(function () {
   $(".quote-container").slick({
