@@ -46,14 +46,16 @@ button {
   color: white; }
   .header-top {
     position: fixed;
-    top: -1.5rem;
-    right: 0;
     background-color: #cccccc;
     /* keep it at the top of everything else */
+    top: -1.5rem;
+    left: 0;
     z-index: 100;
     overflow: hidden;
     min-width: 100%;
-    padding: 1.5rem; }
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
   .header-logo {
     font-size: 3rem;
     font-weight: bold;
@@ -85,7 +87,7 @@ button {
     display: -ms-flexbox;
     display: flex; }
   .header-content {
-    padding-top: 20rem;
+    padding-top: 17rem;
     text-align: center;
     max-width: 90rem;
     margin: 0 auto; }
@@ -197,7 +199,7 @@ button {
     .header .header-bottom {
       margin-bottom: 0; }
     .header .header-content {
-      padding-top: 10rem; }
+      padding-top: 5rem; }
     .header .header-menu {
       position: fixed;
       right: 0;
@@ -1781,7 +1783,7 @@ button {
   transform: translateY(0); }
 
 .wrapper {
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto; }
 
 .container {

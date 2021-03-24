@@ -7,17 +7,24 @@
         ), 
         url('../images/img-header-bg.jpg') no-repeat center / cover;
     color: white;
+
+    // .header.container {
+    //     // position: sticky;
+    //     // top: 0;
+    // }
     
     &-top {
         position: fixed;
-        top: -1.5rem;
-        right: 0;
         background-color: $gray-dark-color;
         /* keep it at the top of everything else */
+        top: -1.5rem;
+        left: 0;
         z-index: 100;
         overflow: hidden;
         min-width: 100%;
-        padding: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     &-logo {
@@ -54,7 +61,7 @@
     }
 
     &-content {
-        padding-top: 20rem;
+        padding-top: 17rem;
         text-align: center;
         max-width: 90rem;
         margin: 0 auto;
@@ -206,7 +213,7 @@
         }
 
         .header-content {
-            padding-top: 10rem;
+            padding-top: 5rem;
         }
 
         .header-menu {
