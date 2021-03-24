@@ -44,6 +44,16 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(233, 131, 130, 0.8)), to(rgba(238, 216, 137, 0.8))), url("../images/img-header-bg.jpg") no-repeat center/cover;
   background: linear-gradient(to bottom, rgba(233, 131, 130, 0.8), rgba(238, 216, 137, 0.8)), url("../images/img-header-bg.jpg") no-repeat center/cover;
   color: white; }
+  .header-top {
+    position: fixed;
+    top: -1.5rem;
+    right: 0;
+    background-color: #cccccc;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    overflow: hidden;
+    min-width: 100%;
+    padding: 1.5rem; }
   .header-logo {
     font-size: 3rem;
     font-weight: bold;
@@ -75,7 +85,7 @@ button {
     display: -ms-flexbox;
     display: flex; }
   .header-content {
-    padding-top: 17rem;
+    padding-top: 20rem;
     text-align: center;
     max-width: 90rem;
     margin: 0 auto; }
@@ -187,11 +197,11 @@ button {
     .header .header-bottom {
       margin-bottom: 0; }
     .header .header-content {
-      padding-top: 5rem; }
+      padding-top: 10rem; }
     .header .header-menu {
       position: fixed;
       right: 0;
-      top: 7rem;
+      top: 6rem;
       bottom: 0;
       background-color: white;
       width: 300px;

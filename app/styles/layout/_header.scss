@@ -7,6 +7,18 @@
         ), 
         url('../images/img-header-bg.jpg') no-repeat center / cover;
     color: white;
+    
+    &-top {
+        position: fixed;
+        top: -1.5rem;
+        right: 0;
+        background-color: $gray-dark-color;
+        /* keep it at the top of everything else */
+        z-index: 100;
+        overflow: hidden;
+        min-width: 100%;
+        padding: 1.5rem;
+    }
 
     &-logo {
         font-size: 3rem;
@@ -42,7 +54,7 @@
     }
 
     &-content {
-        padding-top: 17rem;
+        padding-top: 20rem;
         text-align: center;
         max-width: 90rem;
         margin: 0 auto;
@@ -194,13 +206,13 @@
         }
 
         .header-content {
-            padding-top: 5rem;
+            padding-top: 10rem;
         }
 
         .header-menu {
             position: fixed;
             right: 0;
-            top: 7rem;
+            top: 6rem;
             bottom: 0;
             background-color: white;
             width: 300px;
