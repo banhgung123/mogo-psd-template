@@ -47,7 +47,7 @@ button {
     font-size: 3rem;
     font-weight: bold;
     color: white; }
-  .header-toggle, .header-toggle-close {
+  .header-toggle {
     display: none;
     font-size: 2rem;
     cursor: pointer; }
@@ -202,7 +202,8 @@ button {
       -webkit-transition: -webkit-transform 0.25s ease-in;
       transition: -webkit-transform 0.25s ease-in;
       transition: transform 0.25s ease-in;
-      transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in; }
+      transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in;
+      overflow-y: auto; }
     .header .header-menu.is-expand {
       -webkit-transform: translateX(0);
       transform: translateX(0); }

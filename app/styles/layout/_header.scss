@@ -14,8 +14,7 @@
         color: white;
     }
 
-    &-toggle,
-    &-toggle-close {
+    &-toggle {
         display: none;
         font-size: 2rem;
         cursor: pointer;
@@ -210,6 +209,7 @@
             z-index: 10;
             transform: translateX(100%);
             transition: transform 0.25s ease-in;
+            overflow-y: auto;
         }
 
         .header-menu.is-expand {
