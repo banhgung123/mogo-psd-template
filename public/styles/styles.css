@@ -3,7 +3,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 10rem; }
+  scroll-padding-top: 6rem; }
 
 .text {
   font-family: "Roboto", sans-serif;
@@ -298,7 +298,9 @@ button {
         .about-list::-webkit-scrollbar {
           display: none; }
       .about-item {
-        scroll-snap-align: center; } }
+        scroll-snap-align: center; }
+      .about html {
+        scroll-padding-top: 8rem; } }
 
 .about-item {
   position: relative;

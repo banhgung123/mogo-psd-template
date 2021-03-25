@@ -74,6 +74,10 @@
         &-item {
             scroll-snap-align: center;
         }
+
+        html {
+            scroll-padding-top: 8rem;
+        }
     }
 }
 
