@@ -285,7 +285,7 @@ button {
     word-break: break-word; }
   @media screen and (max-width: 767px) {
     .about {
-      padding-top: 5rem;
+      padding-top: 7rem;
       padding-bottom: 5rem; }
       .about-list {
         grid-auto-columns: 80%;
@@ -304,9 +304,6 @@ button {
           display: none; }
       .about-item {
         scroll-snap-align: center; } }
-
-.anchor {
-  padding-top: 0.1rem; }
 
 .about-item {
   position: relative;
@@ -510,6 +507,9 @@ button {
         width: 100%; }
       .service-item:not(:last-child) {
         margin-bottom: 3rem; } }
+  @media screen and (max-width: 767px) {
+    .service {
+      padding-top: 7rem; } }
 
 .device {
   padding-top: 11rem;
@@ -1055,7 +1055,7 @@ button {
       height: 84rem; } }
   @media screen and (max-width: 767px) {
     .work {
-      padding-top: 5rem; }
+      padding-top: 7rem; }
       .work-column {
         width: 100%; }
       .work-item, .work-item--full {
@@ -1477,7 +1477,8 @@ button {
         word-break: break-word; } }
   @media screen and (max-width: 767px) {
     .story {
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      padding-top: 7rem; }
       .story-list {
         display: block; }
       .story-item {
@@ -1737,7 +1738,7 @@ button {
   .footer-top {
     display: block;
     padding-bottom: 3rem;
-    padding-top: 4rem; }
+    padding-top: 6rem; }
   .footer-column:not(:nth-child(99)) {
     width: 100%;
     margin-bottom: 3rem; }
