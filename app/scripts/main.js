@@ -71,6 +71,21 @@ function scrollToTop() {
 document.addEventListener("scroll", handleScroll);
 scrollToTopBtn.addEventListener("click", scrollToTop);
 
+const activeLink = "header--active";
+menuHeader.addEventListener(
+  "click",
+  function (e) {
+    if (e.target && e.target.nodeName == "A") {
+      const elements = menuHeader.children;
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].children[0].classList.remove(activeLink);
+      }
+      e.target.classList.add(activeLink);
+    }
+  },
+  true
+);
+
 // Slick slider
 $(document).ready(function () {
   $(".quote-container").slick({

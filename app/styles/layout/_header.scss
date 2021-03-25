@@ -251,9 +251,11 @@
 
         .header-menu-link {
             color: $title-color;
-            width: 100%;
+            max-width: 100%;
             padding: 1.5rem;
-            border-radius: 0.4rem;
+            // border-radius: 0.4rem;
+            border-bottom: 0.4rem solid transparent;
+
         }
 
         .header-menu-link:hover {
@@ -269,5 +271,15 @@
         html {
             scroll-padding-top: 10rem;
         }
+
+        .header--active {
+            color: $secondary-color;
+            border-color: $secondary-color;
+        }
+    }
+
+    &--active {
+        color: $secondary-color;
+        border-color: $secondary-color;
     }
 }
