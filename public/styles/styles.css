@@ -2,8 +2,7 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  scroll-behavior: smooth;
-  scroll-padding-top: 6rem; }
+  scroll-behavior: smooth; }
 
 .text {
   font-family: "Roboto", sans-serif;
@@ -53,7 +52,6 @@ button {
     left: 0;
     z-index: 100;
     overflow: hidden;
-    -webkit-overflow-scrolling: touch;
     min-width: 100%;
     padding-bottom: 1.5rem;
     padding-left: 2rem;
@@ -243,8 +241,6 @@ button {
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center; }
-    .header html {
-      scroll-padding-top: 10rem; }
     .header .header--active {
       color: #eed889;
       border-color: #eed889; } }
@@ -308,6 +304,9 @@ button {
           display: none; }
       .about-item {
         scroll-snap-align: center; } }
+
+.anchor {
+  padding-top: 9rem; }
 
 .about-item {
   position: relative;

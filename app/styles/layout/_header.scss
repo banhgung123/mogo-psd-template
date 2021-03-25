@@ -7,11 +7,6 @@
         ), 
         url('../images/img-header-bg.jpg') no-repeat center / cover;
     color: white;
-
-    // .header.container {
-    //     // position: sticky;
-    //     // top: 0;
-    // }
     
     &-top {
         position: fixed;
@@ -21,7 +16,6 @@
         left: 0;
         z-index: 100;
         overflow: hidden;
-        -webkit-overflow-scrolling:touch;
         min-width: 100%;
         padding-bottom: 1.5rem;
         padding-left: 2rem;
@@ -267,10 +261,6 @@
         .header-toggle {
             display: inline-block;
             align-self: center;
-        }
-
-        html {
-            scroll-padding-top: 10rem;
         }
 
         .header--active {
