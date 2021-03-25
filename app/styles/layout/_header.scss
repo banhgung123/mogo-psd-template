@@ -15,7 +15,7 @@
     
     &-top {
         position: fixed;
-        background-color: $gray-dark-color;
+        background-color: $primary-color;
         /* keep it at the top of everything else */
         top: -1.5rem;
         left: 0;
@@ -213,7 +213,7 @@
         }
 
         .header-content {
-            padding-top: 5rem;
+            padding-top: 10rem;
         }
 
         .header-menu {

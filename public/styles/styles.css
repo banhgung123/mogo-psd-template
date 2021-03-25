@@ -46,7 +46,7 @@ button {
   color: white; }
   .header-top {
     position: fixed;
-    background-color: #cccccc;
+    background-color: #e98382;
     /* keep it at the top of everything else */
     top: -1.5rem;
     left: 0;
@@ -199,7 +199,7 @@ button {
     .header .header-bottom {
       margin-bottom: 0; }
     .header .header-content {
-      padding-top: 5rem; }
+      padding-top: 10rem; }
     .header .header-menu {
       position: fixed;
       right: 0;
