@@ -306,7 +306,7 @@ button {
         scroll-snap-align: center; } }
 
 .anchor {
-  padding-top: 9rem; }
+  padding-top: 0.1rem; }
 
 .about-item {
   position: relative;
