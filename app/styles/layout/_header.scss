@@ -265,5 +265,9 @@
             display: inline-block;
             align-self: center;
         }
+
+        html {
+            scroll-padding-top: 10rem;
+        }
     }
 }

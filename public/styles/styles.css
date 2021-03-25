@@ -3,7 +3,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding: 6rem 0 0; }
+  scroll-padding-top: 6rem; }
 
 .text {
   font-family: "Roboto", sans-serif;
@@ -241,7 +241,9 @@ button {
       display: inline-block;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
-      align-self: center; } }
+      align-self: center; }
+    .header html {
+      scroll-padding-top: 10rem; } }
 
 .about {
   padding-top: 9.3rem;
@@ -298,9 +300,7 @@ button {
         .about-list::-webkit-scrollbar {
           display: none; }
       .about-item {
-        scroll-snap-align: center; }
-      .about html {
-        scroll-padding: 8rem 0 0; } }
+        scroll-snap-align: center; } }
 
 .about-item {
   position: relative;
